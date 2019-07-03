@@ -22,6 +22,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += src/main.cpp\
+    src/form/childwidgeta.cpp \
         src/mainwidget.cpp \
     src/loginwidget.cpp \
     src/signalmanageobject/signalmanageobject.cpp \
@@ -47,6 +48,7 @@ SOURCES += src/main.cpp\
 
 
 HEADERS  += src/mainwidget.h \
+    src/form/childwidgeta.h \
     src/loginwidget.h \
     src/signalmanageobject/signalmanageobject.h \
     src/database/userdatabase.h \
