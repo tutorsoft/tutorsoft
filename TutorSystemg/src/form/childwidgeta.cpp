@@ -19,6 +19,7 @@ ChildWidgetA::ChildWidgetA(QWidget *parent) :
     MainWidget::allSignalEvent.setChildWidgetA(this);
 }
 
+
 ChildWidgetA::~ChildWidgetA()
 {
     delete ui;
