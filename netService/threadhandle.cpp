@@ -72,7 +72,7 @@ void ThreadHandle::initThreadType(ThreadType type, unsigned int max)
         {
             QThread * tmp = new QThread;
 #ifndef Q_OS_WIN
-            tmp->setEventDispatcher(new EventDispatcherLibEv());
+//            tmp->setEventDispatcher(new EventDispatcherLibEv());
 #endif
             threadSize.insert(tmp,0);
             tmp->start();
@@ -88,7 +88,7 @@ void ThreadHandle::initThreadSize() //建立好线程并启动，
     {
         tmp = new QThread;
 #ifndef Q_OS_WIN
-        tmp->setEventDispatcher(new EventDispatcherLibEv());
+//        tmp->setEventDispatcher(new EventDispatcherLibEv());
 #endif
         threadSize.insert(tmp,0);
         tmp->start();
@@ -107,7 +107,7 @@ QThread * ThreadHandle::findHandleSize() //查找到线程里的连接数小于�
     }
     QThread * tmp = new QThread;
 #ifndef Q_OS_WIN
-    tmp->setEventDispatcher(new EventDispatcherLibEv());
+//    tmp->setEventDispatcher(new EventDispatcherLibEv());
 #endif
     threadSize.insert(tmp,1);
     tmp->start();

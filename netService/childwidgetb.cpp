@@ -67,9 +67,10 @@ void ChildWidgetB::on_btn_del_clicked()
         qCritical() << userDataBasePri::database.lastError().text();
     }
     QSqlQuery query(userDataBasePri::database);
- QString statement = QString("delete form %1 where teacherid = '%2'").arg("teacher_information").arg(id);
+        QString statement = QString("delete from teacher_information where teacherid = '%1'").arg(id);
+
     query.exec(statement);
-    qDebug()<<"asdf"<<query.lastError();
+    qDebug()<<"asdf"<<query.lastError()<<statement;
     userDataBasePri::database.close();
     updateDisplay();
     }

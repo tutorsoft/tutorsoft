@@ -66,11 +66,11 @@ void ChildWidgetA::on_btn_del_clicked()
         qCritical() << userDataBasePri::database.lastError().text();
     }
     QSqlQuery query(userDataBasePri::database);
-    //QString deletestr = QString::fromLocal8Bit("delete from %1 where needid = %2").arg(tstr0).arg(t_text);
 
-    QString statement = QString("delete form %1 where studentid = '%2'").arg("student_information").arg(id);
+
+    QString statement = QString("delete from student_information where studentid = '%1'").arg(id);
     query.exec(statement);
-    qDebug()<<"asdf"<<query.lastError();
+    qDebug()<<"asdf"<<query.lastError()<<statement;
     userDataBasePri::database.close();
     updateDisplay();
     }
