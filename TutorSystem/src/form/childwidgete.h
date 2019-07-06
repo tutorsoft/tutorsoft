@@ -14,7 +14,8 @@ class ChildWidgetE : public QWidget
 public:
     explicit ChildWidgetE(QWidget *parent = 0);
     ~ChildWidgetE();
-
+signals:
+    void sendWriteSocket(QString);
 protected:
     void showEvent(QShowEvent *event);
 
@@ -25,7 +26,7 @@ private:
 private slots:
     void onHeaderClicked(int,int);
 
-
+ void acceptSocketData(QString);
 private slots:
     void on_btn_find_clicked();
 

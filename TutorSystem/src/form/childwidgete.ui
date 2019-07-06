@@ -49,19 +49,6 @@
     <string>教师编号:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_find">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>580</y>
-     <width>75</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>查询</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>

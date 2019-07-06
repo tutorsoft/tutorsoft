@@ -14,7 +14,8 @@ class ChildWidgetF : public QWidget
 public:
     explicit ChildWidgetF(QWidget *parent = 0);
     ~ChildWidgetF();
-
+signals:
+    void sendWriteSocket(QString);
 protected:
     void showEvent(QShowEvent *event);
 
@@ -28,7 +29,7 @@ private slots:
     void on_btn_find_clicked();
 
     void on_btn_look_clicked();
-
+ void acceptSocketData(QString);
 private:
     Ui::ChildWidgetF *ui;
     int selectrow;
