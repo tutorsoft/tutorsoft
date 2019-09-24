@@ -24,6 +24,7 @@ StudentWidget::StudentWidget(QWidget *parent) :
     ui->stackedWidget->setCurrentWidget(m_ChildWidgetA);
 }
 
+
 StudentWidget::~StudentWidget()
 {
     delete ui;
