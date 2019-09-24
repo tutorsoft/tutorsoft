@@ -13,6 +13,7 @@ namespace Ui {
 class StudentWidget;
 }
 
+
 class StudentWidget : public QWidget
 {
     Q_OBJECT
