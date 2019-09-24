@@ -7,6 +7,7 @@ typedef struct {
     QString iconPath;
     QString singer;
     QString songsNb;
+
 } MuItemData;
 
 Q_DECLARE_METATYPE(MuItemData)
